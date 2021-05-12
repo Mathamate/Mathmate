@@ -6,7 +6,7 @@
 /* smartphones */
 @media (min-width:300px) and (max-width:599.9px)  { 
     /* Main */
-    html {
+    * {
         margin: 0;
         padding: 0;
         background-color: #D2FEFF;
@@ -118,7 +118,7 @@
  /* laptops and desktops */ 
 @media (min-width:1025px) and (max-width:1500px) { 
     /* Main */
-    html {
+    * {
         margin: 0;
         padding: 0;
         background-color: #D2FEFF;
