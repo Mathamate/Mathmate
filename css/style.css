@@ -121,6 +121,8 @@
     * {
         margin: 0;
         padding: 0;
+    }
+    html {
         background-color: #D2FEFF;
     }
     /* Einde main */
