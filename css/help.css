@@ -1,0 +1,15 @@
+
+.reveal h1 {
+    font-size: 55px;
+}
+html {
+    background-color: #D2FEFF;
+}
+.hoe .intro{
+    position: relative;
+}
+.logo {
+    width: 10vw;
+    position: fixed;
+    padding: 5px;
+}
