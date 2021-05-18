@@ -36,14 +36,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --selection-color: #fff; }
 
 .reveal-viewport {
-  background: #191919;
-  background-color: #191919; }
+  background: #D2FEFF;
+  background-color: #D2FEFF; }
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 42px;
   font-weight: normal;
-  color: #fff; }
+  color: black; }
 
 .reveal ::selection {
   color: #fff;

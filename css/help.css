@@ -1,9 +1,11 @@
 
 .reveal h1 {
     font-size: 55px;
+    color: black;
 }
 html {
-    background-color: #D2FEFF;
+    background-color: black;
+    color: black;
 }
 .hoe .intro{
     position: relative;
