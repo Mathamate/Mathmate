@@ -1,0 +1,73 @@
+/* laptops and desktops */ 
+@media (min-width:1025px) and (max-width:1500px) { 
+    /* Main */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html {
+        background-color: #D2FEFF;
+        overflow-x: hidden;
+    }
+    /* Einde main */
+    /* Header/nav */
+    header {
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: repeat(1, 19.5vh);
+        grid-template-areas: 
+        "logo logo  naam  nav nav nav nav nav nav nav nav nav nav nav nav";
+    }
+    .logo {
+        display: grid;
+        position: relative;
+        grid-area: logo;
+        width: 10vw;
+        justify-self: center;
+    }
+    .naam {
+        display: grid;
+        position: relative;
+        grid-area: naam;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+    }
+    .bigscreen {
+        display: grid;
+        display: unset;
+        grid-area: nav;
+        align-self: center;
+        justify-self: center;
+    }
+    .bigscreen a, .bigscreen-ond a {
+        position: relative;
+        border: 1px black solid;
+        text-align: center;
+        text-decoration: none;
+        padding: 15px;
+        background-color: white;
+        width: 10vw;
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+    }
+    .bigscreen a:hover, .bigscreen-ond a:hover{ background-color: lightblue;}
+    .bigscreen-ond {
+        position: relative;
+        left:30.5vw;
+        top: 10vh;
+    }
+    .titel {
+        position: relative;
+        left: 34vw;
+        top: 5vh;
+        font-family: 'Raleway', sans-serif;
+        width: 35vw;
+    }
+    footer {
+        position: relative;
+        background-color: black;
+        bottom: -78vh;
+        height: 10vh;
+    }
+}
