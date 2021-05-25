@@ -1,364 +1,54 @@
-/* Fonts */
-/* Raleway extra light 200 */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-/* Raleway extra bold 800 */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
-/* smartphones */
-@media (min-width:300px) and (max-width:599.9px)  { 
-    /* Main */
-    * {
-        margin: 0;
-        padding: 0;
-        background-color: #D2FEFF;
-    }
-    /* Einde main */
-    /* Header/nav */
-    header {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 19.5vh);
-        grid-template-areas: 
-        "logo naam nav ";
-    }
-    .logo {
-        display: grid;
-        position: relative;
-        grid-area: logo;
-        width: 25vw;
-        justify-self: center;
-        align-self: center;
-    }
-    .naam {
-        display: grid;
-        position: relative;
-        grid-area: naam;
-        align-self: center;
-        font-size: 20px;
-        font-family: 'Raleway', sans-serif;
-    }
-   .bigscreen {display: none;}
-
-    /* Einde header/nav */
-    /* Info */
-    section {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 19.5vh);
-        grid-template-areas: 
-        "banner banner banner banner"
-        ". . . ."
-        "mascotte info info info "
-        "mascotte info info info "
-        "mascotte info info info "
-        "footer footer footer footer";
-        padding-top: 4vh;
-    }
-    .banner {
-        display: grid;
-        position: relative;
-        grid-area: banner;
-        width: 94vw;
-        height: 25vh;
-        align-self:baseline;
-        z-index: 2;
-    }
-    .welkom {
-        position: relative;
-        font-size: 25px;
-        left: 30vw;
-        bottom: 13.5vh;
-        z-index: 3;
-        font-family: 'Raleway', sans-serif;
-    }
-    .mascotte {
-        display: grid;
-        position: relative;
-        grid-area: mascotte;
-        width: 30vw;
-        align-self: center;
-        justify-self: center;
-    }
-    .balloon {
-        display: grid;
-        position: relative;
-        grid-area: info;
-        width: 60vw;
-        height: 35vh;
-        background-color: white;
-        border-radius: 50px;
-        border: 1px black solid;
-        left: 2vw;
-    }
-    .balloon p {
-        position: relative;
-        width: 50vw;
-        left: 5vw;
-        bottom: 2vh;
-        font-family: 'Raleway', sans-serif;
-    }
-    .wat {
-        position: relative;
-        font-size: 25px;
-        width: 60vw;
-        left: 1vw;
-        top: 7vh;
-        font-family: 'Raleway', sans-serif;
-    }
-    footer {
-        display: grid;
-        grid-area: footer;
-        background-color: black;
-    }
-    /* Einde info */
- }
- /* tablet/iPad */
-@media (min-width:600px) and (max-width:1024,9px) { 
-
- }
- /* laptops and desktops */ 
-@media (min-width:1025px) and (max-width:1500px) { 
-    /* Main */
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    html {
-        background-color: #D2FEFF;
-    }
-    /* Einde main */
-    /* Header/nav */
-    header {
-        display: grid;
-        grid-template-columns: repeat(15, 1fr);
-        grid-template-rows: repeat(1, 19.5vh);
-        grid-template-areas: 
-        "logo logo  naam  nav nav nav nav nav nav nav nav nav nav nav nav";
-    }
-    .logo {
-        display: grid;
-        position: relative;
-        grid-area: logo;
-        width: 10vw;
-        justify-self: center;
-    }
-    .naam {
-        display: grid;
-        position: relative;
-        grid-area: naam;
-        align-items: center;
-        font-family: 'Raleway', sans-serif;
-    }
-    .bigscreen {
-        display: grid;
-        display: unset;
-        grid-area: nav;
-        align-self: center;
-        justify-self: center;
-    }
-    .bigscreen a {
-        position: relative;
-        border: 1px black solid;
-        text-align: center;
-        text-decoration: none;
-        padding: 15px;
-        background-color: white;
-        width: 10vw;
-        color: black;
-        font-family: 'Raleway', sans-serif;
-        font-size: 15px;
-    }
-    .bigscreen a:hover { background-color: lightblue;}
-    /* Einde header/nav */
-    /* Info */
-    section {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(6, 19.5vh);
-        grid-template-areas: 
-        "banner banner banner banner banner"
-        "banner banner banner banner banner"
-        ". . . . ."
-        "mascotte info info info info"
-        "mascotte info info info info"
-        "footer footer footer footer footer";
-        padding-top: 4vh;
-    }
-    .banner {
-        display: grid;
-        position: relative;
-        grid-area: banner;
-        width: 98vw;
-        height: 39vh;
-        align-self:baseline;
-        z-index: 2;
-    }
-    .welkom {
-        position: relative;
-        font-size: 50px;
-        left: 40vw;
-        bottom: 30vh;
-        z-index: 3;
-        font-family: 'Raleway', sans-serif;
-    }
-    .mascotte {
-        display: grid;
-        position: relative;
-        grid-area: mascotte;
-        width: 10vw;
-        align-self: center;
-        justify-self: center;
-    }
-    .balloon {
-        display: grid;
-        position: relative;
-        grid-area: info;
-        width: 50vw;
-        height: 20vh;
-        background-color: white;
-        border-radius: 50px;
-        border: 1px black solid;
-        justify-content: space-around;
-    }
-    .balloon p {
-        position: relative;
-        width: 50vw;
-        left: 2vw;
-        font-family: 'Raleway', sans-serif;
-    }
-    .wat {
-        position: relative;
-        font-size: 40px;
-        width: 50vw;
-        left: 12vw;
-        top: 2vh;
-        font-family: 'Raleway', sans-serif;
-    }
-    footer {
-        display: grid;
-        grid-area: footer;
-        background-color: black;
-    }
-    /* Einde info */
+* _{
+    margin: 0;
+    padding: 0;
 }
-@media (min-width:1501px) and (max-width:2000px){
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    html {
-        background-color: #D2FEFF;
-    }
-    /* Einde main */
-    /* Header/nav */
-    header {
-        display: grid;
-        grid-template-columns: repeat(15, 1fr);
-        grid-template-rows: repeat(1, 19.5vh);
-        grid-template-areas: 
-        "logo logo  naam  nav nav nav nav nav nav nav nav nav nav nav nav";
-    }
-    .logo {
-        display: grid;
-        position: relative;
-        grid-area: logo;
-        width: 10vw;
-        justify-self: center;
-    }
-    .naam {
-        display: grid;
-        position: relative;
-        grid-area: naam;
-        align-items: center;
-        font-family: 'Raleway', sans-serif;
-    }
-    .bigscreen {
-        display: grid;
-        display: unset;
-        grid-area: nav;
-        align-self: center;
-        justify-self: center;
-    }
-    .bigscreen a {
-        position: relative;
-        border: 1px black solid;
-        text-align: center;
-        text-decoration: none;
-        padding: 15px;
-        background-color: white;
-        width: 10vw;
-        color: black;
-        font-family: 'Raleway', sans-serif;
-        font-size: 22px;
-    }
-    .bigscreen a:hover { background-color: lightblue;}
-    /* Einde header/nav */
-    /* Info */
-    section {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(6, 19.5vh);
-        grid-template-areas: 
-        "banner banner banner banner banner"
-        "banner banner banner banner banner"
-        ". . . . ."
-        "mascotte info info info info"
-        "mascotte info info info info"
-        "footer footer footer footer footer";
-        padding-top: 4vh;
-    }
-    .banner {
-        display: grid;
-        position: relative;
-        grid-area: banner;
-        width: 98vw;
-        height: 39vh;
-        align-self:baseline;
-        z-index: 2;
-    }
-    .welkom {
-        position: relative;
-        font-size: 50px;
-        left: 40vw;
-        bottom: 30vh;
-        z-index: 3;
-        font-family: 'Raleway', sans-serif;
-    }
-    .mascotte {
-        display: grid;
-        position: relative;
-        grid-area: mascotte;
-        width: 10vw;
-        align-self: center;
-        justify-self: center;
-    }
-    .balloon {
-        display: grid;
-        position: relative;
-        grid-area: info;
-        width: 50vw;
-        height: 20vh;
-        background-color: white;
-        border-radius: 50px;
-        border: 1px black solid;
-        justify-content: space-around;
-    }
-    .balloon p {
-        position: relative;
-        width: 50vw;
-        left: 2vw;
-        font-family: 'Raleway', sans-serif;
-    }
-    .wat {
-        position: relative;
-        font-size: 40px;
-        width: 50vw;
-        left: 12vw;
-        top: 2vh;
-        font-family: 'Raleway', sans-serif;
-    }
-    footer {
-        display: grid;
-        grid-area: footer;
-        background-color: black;
-    }
+.logo {
+    display: flex;
+    position: relative; 
+    width: 10vw;
+    justify-self: center;
+}
+.naam {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+.bigscreen {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.bigscreen a {
+    display: flex;
+    position: relative;
+    border: 1px black solid;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: white;
+    width: 10vw;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+.banner{
+        width: 100%;
+}
+.welkom{
+
+}
+.wat{
+
+}
+.balloon{
+
+}
+.mascotte{
+    width: 10vh;
 }
