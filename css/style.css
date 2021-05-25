@@ -46,9 +46,24 @@
 .wat{
 
 }
-.balloon{
-
+.balloon {
+    display: grid;
+    position: relative;
+    grid-area: info;
+    width: 50vw;
+    height: 20vh;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px black solid;
+    justify-content: space-around;
+}
+.balloon p {
+    position: relative;
+    width: 50vw;
+    left: 2vw;
+    font-family: 'Raleway', sans-serif;
 }
 .mascotte{
     width: 10vh;
 }
+
