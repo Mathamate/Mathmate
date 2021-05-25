@@ -1,69 +1,114 @@
-* _{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
 }
 .logo {
-    display: flex;
-    position: relative; 
-    width: 10vw;
-    justify-self: center;
+    width: 100px;
 }
 .naam {
     display: flex;
     position: relative;
     align-items: center;
     font-family: 'Raleway', sans-serif;
+    margin-right: 5vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; 
+    height: 80px;
 }
 .bigscreen {
     display: flex;
     flex-direction: row;
-    align-self: center;
-    justify-self: center;
-}
-.header{
-    display: flex;
-    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-right: 16px;
 }
 .bigscreen a {
-    display: flex;
     position: relative;
     border: 1px black solid;
     text-align: center;
     text-decoration: none;
-    padding: 15px;
+    padding: 12px 24px;
     background-color: white;
-    width: 10vw;
     color: black;
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
 }
 .banner{
         width: 100%;
+        height: 50vh;
+        display: grid;
+        place-items: center;
+        background: url('../images/banner.png');
 }
-.welkom{
-
+.welkom {
+    font-size: 35px;
+    width: 100%;
+    place-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
-.wat{
-
-}
-.balloon {
-    display: grid;
+.wat {
     position: relative;
-    grid-area: info;
+    font-size: 25px;
+    width: 60vw;
+    left: 1vw;
+    top: 7vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 70vh;
+}
+
+
+.balloon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 50vw;
     height: 20vh;
     background-color: white;
     border-radius: 50px;
     border: 1px black solid;
     justify-content: space-around;
+    left: 28vh;
 }
+
+.balloon h1 {
+    padding: 1rem;
+    margin-left: 30%;
+}
+
 .balloon p {
-    position: relative;
+    padding: 2rem;
     width: 50vw;
     left: 2vw;
+    font-size: 20px;
     font-family: 'Raleway', sans-serif;
 }
 .mascotte{
-    width: 10vh;
+    width: 15vh;
+    position: absolute;
+    left: 2vh;
+    top: 13vh;
+}
+html {
+    background-color: #D2FEFF;
+}
+
+@media screen and (max-width: 1260px) {
+    .bigscreen {
+        display: none;
+    }
 }
 
