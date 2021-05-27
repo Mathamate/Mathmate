@@ -8,30 +8,41 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-   
-        <header>
-        <a href="index.html"><img class="logo" src="images/logo-math.png" alt="Logo Math Mate"></a>
+        <header class="header">
+        <img class="logo" src="images/logo-math.png" alt="Logo Math Mate">
         <h1 class="naam">Math Mate</h1>
         <nav class="bigscreen">
             <a href="index.html">Home</a>
             <a href="presentatie.html">Presentatie</a>
-            <a href="#">Makkelijke berekeningen</a>
+            <div class="dropdown">
+              <button class="dropbtn">Berekeningen</button>
+              <div class="dropdown-content">
+                <a href="#">Makkelijk</a>
+                <a href="#">Moeilijk</a>
+              </div>
+            </div>
             <a href="#">Reeksen</a>
-            <a href="#">Moeklijke berekeningen</a>
-            <a href="#">Rad van fortuin</a>
-            <a href="#">Shoot the pig</a>
+            <div class="dropdown">
+              <button class="dropbtn">Games</button>
+              <div class="dropdown-content">
+                <a href="#">Rad van fortuin</a>
+                <a href="#">Shoot the pig</a>
+              </div>
+            </div>
+            <a href="#">Login</a>
         </nav>
     </header>
-  <section>
-    <img class="banner" src="images/banner.png" alt="banner">
+  <section class="banner">
     <h1 class="welkom">Welkom</h1>
-    <img class="mascotte" src="images/Mascotte.png" alt="Mascotte Math Mate">
-    <h1 class="wat">Wat is Math Mate?</h1>
-    <section class="balloon">
-        <p>Math Mate is ontwikkeld voor alle studenten die het vak Logica volgen en daarvoor lastige berekeningen moeten oplosssen.<br>
-        Op elke pagina verschijn ik met de zo nodige uitleg en uitwerking/oplossing.</p>
-    </section>
-    <footer></footer>
   </section>
+  <div class="main">
+    <section class="balloon">
+    <h1 class="titel">Wat is MathMate?</h1>
+    <p>Math Mate is ontwikkeld voor alle studenten die het vak Logica volgen en daarvoor lastige berekeningen moeten oplosssen.<br>
+    Op elke pagina verschijn ik met de zo nodige uitleg en uitwerking/oplossing.</p>
+    <img class="mascotte" src="images/Mascotte.png" alt="Mascotte Math Mate">
+  </section>
+</div>
+  <footer>Disclaimer</footer>
 </body>
 </html>
