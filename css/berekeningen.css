@@ -103,12 +103,68 @@ html {
 .Kwadratenreeks:hover {
     background-color: lightblue;
 }
+.omreken{
+    margin: 0vh 0 0 3vw;
+    padding: 5px;
+    font-size: 25px;
+    background-color: white;
+}
+.omreken:hover {
+    background-color: lightblue;
+}
+.fact{
+    margin: 0vh 0 0 3vw;
+    padding: 5px;
+    font-size: 25px;
+    background-color: white;
+}
+.fact:hover {
+    background-color: lightblue;
+}
+.Fabonacci{
+    margin: 0vh 0 0 3vw;
+    padding: 5px;
+    font-size: 25px;
+    background-color: white;
+}
+.Fabonacci:hover {
+    background-color: lightblue;
+}
+.Priemgetallen{
+    margin: 0vh 0 0 3vw;
+    padding: 5px;
+    font-size: 25px;
+    background-color: white;
+}
+.Priemgetallen:hover {
+    background-color: lightblue;
+}
 #form {
     position: relative;
+  
 }
 .knoppen {
     position: relative;
     left: -95px;
+}
+.knoppen2 {
+    position: relative;
+    left: 450px;
+    top: 30px;
+}
+.knoppen3 {
+    position: relative;
+    left: 500px;
+    top: 30px;
+}
+footer {
+        position: relative;
+        background-color: black;
+        height: 10vh;
+        text-align: center;
+        color: white;
+        padding: 50px;
+        bottom: -60vh;
 }
 @media screen and (max-width: 1260px) {
     .bigscreen {
