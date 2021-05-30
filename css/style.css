@@ -102,9 +102,91 @@
     left: 2vh;
     top: 13vh;
 }
+.mascotte2{
+    width: 18vh;
+    position: absolute;
+    top: 60vh;
+    left: 5vw;
+}
+svg {
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    margin-left: -10vw;
+  }
+  path {
+    fill: white;
+    stroke: black;
+    stroke-width: 2;
+    stroke-linejoin: round;
+  }
+  path:hover {
+    fill: aliceblue;
+    stroke: rgb(171, 250, 135);
+  }
 html {
     background-color: #D2FEFF;
 }
+
+.invoer{
+    margin: 10vh 20vw 0vh 30vw;
+    width: 50vw;
+    height: 20vh;
+}
+.Bereken-knop{
+    margin: 3vh 0vw 0vh 30vw;
+    width: 25vw;
+    height: 5vh;
+    font-size: 20px;
+}
+.Clear{
+   
+    width: 25vw;
+    height: 5vh;
+    font-size: 20px;
+}
+.uitvoer{
+    margin: 3vh 20vw 0vh 30vw;
+    width: 50vw;
+    height: 20vh;
+}
+.kopstuk{
+    border: 1px solid black;
+    margin: 5vh 0vw 0vh 45vw;
+    text-align: center;
+    width: 20vw;
+    padding: 10px;
+    background-color: white;
+    font-size: 30px;
+}
+.Tafels{
+    margin: 5vh 0 0 35vw;
+    padding: 5px;
+    font-size: 25px;
+    background-color: white;
+}
+
+.Machtreeks{
+    margin: 0vh 0 0 3vw;
+    padding: 5px;
+    font-size: 25px;
+    background-color: white;
+}
+
+.Breukenreeks{
+    margin: 0vh 0 0 3vw;
+    padding: 5px;
+    font-size: 25px;
+    background-color: white;
+}
+
+.Kwadratenreeks{
+    margin: 0vh 0 0 3vw;
+    padding: 5px;
+    font-size: 25px;
+    background-color: white;
+}
+
 
 @media screen and (max-width: 1260px) {
     .bigscreen {

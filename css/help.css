@@ -1,0 +1,52 @@
+
+.reveal h1 {
+    font-size: 55px;
+    color: black;
+    height: -50vh;
+}
+html {
+    background-color: white;
+    color: black;
+}
+.hoe .intro{
+    position: relative;
+    height: -20vh;
+}
+
+.intro{
+    height: -20vh;
+
+}
+.logo {
+    width: 10vw;
+    position: fixed;
+    padding: 5px;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(1, 19.5vh);
+    grid-template-areas: 
+    "logo logo  naam  nav nav nav nav nav nav nav nav nav nav nav nav";
+}
+.bigscreen {
+    display: grid;
+    display: unset;
+    grid-area: nav;
+    align-self: center;
+    justify-self: center;
+}
+.bigscreen a {
+    position: relative;
+    border: 1px black solid;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: white;
+    width: -1 5vw;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.bigscreen a:hover { background-color: lightblue;}
+
