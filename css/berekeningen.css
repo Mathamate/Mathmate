@@ -57,6 +57,8 @@ html {
     margin: 3vh 20vw 0vh 30vw;
     width: 50vw;
     height: 20vh;
+    background-color: white;
+    border: 1px black solid;
 }
 .kopstuk{
     border: 1px solid black;
