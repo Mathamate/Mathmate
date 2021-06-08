@@ -145,6 +145,18 @@ html {
     position: relative;
   
 }
+.bereken {
+    position: relative;
+    left: 500px;
+    top: -60px;
+}
+td {
+    font-size: 30px;
+}
+.nummereen, .nummertwee {
+    width: 80px;
+    height: 50px;
+}
 .knoppen {
     position: relative;
     left: -95px;
@@ -169,8 +181,53 @@ footer {
         bottom: -60vh;
 }
 @media screen and (max-width: 1260px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Raleway', sans-serif;
+    }
+    html {
+        height: 50px;
+    }
     .bigscreen {
         display: none;
+    }
+    #form {
+        position: relative;
+        left: -15px;
+    }
+    footer {
+        position: relative;
+        background-color: black;
+        height: 10vh;
+        text-align: center;
+        color: white;
+        padding: 50px;
+        bottom: -100vh;
+    }
+    .kopstuk {
+    border: 1px solid black;
+    margin: 5vh 0vw 0vh 45vw;
+    text-align: center;
+    width: 60vw;
+    padding: 10px;
+    background-color: white;
+    font-size: 30px;
+    left: -85px;
+    position: relative;
+    }
+    .knoppen2 {
+        position: relative;
+        left: 80px;
+        top: 30px;
+    }
+    .mascotte2{
+        width: 18vh;
+        position: absolute;
+        top: 1000px;
+        left: 35vw;
     }
 }
 
