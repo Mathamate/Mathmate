@@ -1,26 +1,45 @@
-// function Calculate() {
-//     var table = document.getElementById('table');
-//     var items = table.getElementsByTagName('input');
-//     var sum = 0;
-//     var output = document.getElementById('sum');
-//     output.innerHTML = sum;
-//     for(var i=0; i<items.length; i++)
-//         sum += parseInt(items[i].value);
-//     var output = document.getElementById('sum');
-//     output.innerHTML = sum;
-// }
+window.onload = function(){
+    tafels()
+    Calculate()
+    verwijder();
+}
+function tafels(){
+//     var output;
+//     output = document.getElementById('uitvoer');
+//     output.innerHTML = "Test";
+    // var tafelTot = 10;
+    // var tafelGetal = document.getElementById('invoer2');
+    // var teller = document.getElementById('invoer1');
+}
+function Calculate(){
+    var button = document.getElementById('Bereken-knop');
+    var output;
+    output = document.getElementById('uitvoer'); // NIET VERWIJDEREN
+    var tafelTot = 10;
+    var tafelGetal = document.getElementById('invoer2');
+    var teller = document.getElementById('invoer1');
 
-// function addRow() {
-//     var table = document.getElementById('table');
-
-//     var button = document.getElementsByTagName('input')[0];
-
-//     button.onclick = function() {
-//         var clone = table.rows[table.rows.length - 2].cloneNode(true);
-//         clone.cells[0].firstChild.data =
-//         clone.cells[0].firstChild.data.replace(/(\d+):/, function(str, g1) {
-//             return (+g1 + 1) + ':';
-//         });
-//         table.tBodies[0].appendChild(clone);
-//     };
-// }
+    button.onclick = function(){
+        var output;
+        output = document.getElementById('uitvoer');
+        var tafelTot = 10;
+        var tafelGetal = document.getElementById('invoer2');
+        var teller = document.getElementById('invoer1');
+        
+        while(teller <= tafelTot){
+            output.innerHTML = tafelGetal + " X " + teller + " = " + tafelGetal * teller;
+            teller++;
+        }
+        // berekenen werkt nog niet
+}
+}
+function verwijder(){
+    var delBut = document.getElementById('Clear');
+    var output;
+        output = document.getElementById('uitvoer');
+    delBut.onclick = function(){
+        var output;
+        output = document.getElementById('uitvoer');
+        output.innerHTML = " ";
+    }
+}

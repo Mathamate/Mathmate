@@ -54,9 +54,10 @@
       <input class="Breukenreeks" type="submit" value="Breukenreeks">
       <input class="Kwadratenreeks" type="submit" value="Kwadratenreeks">
     </section>
-      <textarea class="invoer" name="invoer" rows="6" cols="25">Voer hier je berekening in</textarea><br/>
-      <input class="Bereken-knop" type="submit" value="Bereken"><input class="Clear" type="reset" value="Clear">
-      <textarea class="uitvoer" name="uitvoer" rows="6" cols="25"></textarea><br/>
+    <section class="berekening">
+      <textarea id="invoer" name="invoer" >tekst1</textarea><p>X</p><textarea id="invoer2" name="invoer" >tekst2</textarea></section><br>
+      <input id="Bereken-knop" type="submit" value="Bereken" onclick="Calculate()"><input id="Clear" type="reset" value="Wissen">
+      <div id="uitvoer" name="uitvoer" rows="6" cols="25"></div><br/>
   </section>
 </div>
 <!-- <section class="bereken">

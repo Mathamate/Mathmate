@@ -36,24 +36,36 @@ html {
     overflow-x: hidden;
 }
 
-.invoer{
-    margin: 10vh 20vw 0vh 30vw;
-    width: 50vw;
-    height: 20vh;
+#invoer, #invoer2{
+    margin: 5vh 0vw 0vh 30vw;
+    width: 5vw;
+    height: 5vh;
+    float: left;
 }
-.Bereken-knop{
+.berekening p{
+    position: relative;
+    top: 35px;
+    left: 35px;
+}
+.berekening #invoer2
+{
+    position: relative;
+    right: 300px;
+    top: -18px;
+}
+    #Bereken-knop{
     margin: 3vh 0vw 0vh 30vw;
     width: 25vw;
     height: 5vh;
     font-size: 20px;
 }
-.Clear{
+#Clear{
    
     width: 25vw;
     height: 5vh;
     font-size: 20px;
 }
-.uitvoer{
+#uitvoer{
     margin: 3vh 20vw 0vh 30vw;
     width: 50vw;
     height: 20vh;
