@@ -134,6 +134,7 @@ footer {
     color: white;
     padding: 50px;
 }
+/* Login pagina */
 .login {
     position: relative;
     left: 450px;
@@ -156,6 +157,7 @@ footer {
 .titel {
     font-size: 50px;
 }
+/* Einde login pagina */
 @media screen and (max-width: 1260px) {
    * {
        margin: 0;
