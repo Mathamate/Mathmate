@@ -1,0 +1,84 @@
+<?php
+$error = " ";
+if(isset($_POST['submit'])){
+    if (!empty($_POST['username']) && !empty($_POST['password'])){
+
+        require('dbconnect.php');
+
+        $username = trim($_POST['username']);
+        $pass = trim($_POST['password']);
+
+        $sql = "SELECT * FROM gebruikers WHERE username = '".$username."'";
+        if($result = $conn->query($sql)){
+
+            $dbuser = $result->fetch_row();
+            $dbpass = $dbuser[2];
+
+            // $aantal = $result->num_rows;
+
+         }
+         //else{
+        //     $error = "Query mislukt";
+        // }
+
+        if (password_verify($pass, $dbpass)) {
+            session_start();
+            $_SESSION['ingelogddb'] = true;
+            header("Location: ingelogddb.php");
+        } else {
+            $error = "Geen juiste gegevens ingevuld";
+        }
+    } else {
+        $error = "Vul je gegevens in";
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inloggen</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo-math.png" alt="Logo Math Mate">
+        <h1 class="naam">Math Mate</h1>
+        <nav class="bigscreen">
+            <a href="index.html">Home</a>
+            <a href="presentatie.html">Presentatie</a>
+            <div class="dropdown">
+              <button class="dropbtn">Berekeningen</button>
+              <div class="dropdown-content">
+                <a href="mak_berekeningen.html">Makkelijk</a>
+                <a href="moei_berekeningen.html">Moeilijk</a>
+              </div>
+            </div>
+            <a href="reeksen.html">Reeksen</a>
+            <div class="dropdown">
+              <button class="dropbtn">Games</button>
+              <div class="dropdown-content">
+                <a href="#">Rad van fortuin</a>
+                <a href="#">Shoot the pig</a>
+              </div>
+            </div>
+            <a href="login.html">Login</a>
+        </nav>
+        
+    </header>
+<?php echo $error; ?>
+<section class="login">
+    <h1 class="titel">Login</h1><br>
+    <form method="POST" action=" ">
+    <h2>Naam</h2>
+    <input class="balk" type="text" name="username">
+    <h2>Wachtwoord</h2>
+    <input class="balk" type="password" name="password"><br><br>
+    <input class="submit" type="submit" name="submit" value="Inloggen">
+    </form>
+</section>
+<footer></footer>
+</body>
+</html>
