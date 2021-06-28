@@ -118,7 +118,8 @@ padding: 50px;
     }
     .topnav {
       position: relative;
-      left: 20px;
+      left: -5px;
+      top: -50px;
     }
     .naam{
       position: relative;
@@ -139,22 +140,25 @@ padding: 50px;
   }
   .mascotte{
     position: relative;
-    left: -35vw;
-    top: -350px;
+    left: -30vw;
+    top: -370px;
   }
     .balloon {
-      height: 55vh;
-      left: 25vh;
+      height: 59vh;
+      left: 20vh;
       top: 600px;
       margin-bottom: 1000px;
       }
       .balloon p {
         left: -5px;
+        top: -15vh;
       }
       .balloon h1 {
         position: relative;
         margin-left: -9px;
         left: 2px;
+        font-size: 2.5rem;
+        top: -5vh;
       }
       footer {
         width: 89%;

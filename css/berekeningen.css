@@ -71,7 +71,8 @@ top: 100vh;
     }
     .topnav {
       position: relative;
-      left: 20px;
+      left: -5px;
+      top: -50px;
     }
     .naam{
       position: relative;
