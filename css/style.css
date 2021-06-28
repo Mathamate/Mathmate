@@ -108,60 +108,8 @@ text-align: center;
 color: white;
 padding: 50px;
 }
-  @media screen and (max-width: 600px) {
-    .topnav a {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-      position: relative;
-      top: -100px;
-    }
-    .topnav {
-      position: relative;
-      left: 20px;
-    }
-    .naam{
-      position: relative;
-      left: 180px;
-      top: -90px;
-      height: 50px;
-      width: 200px;
-    }
-    .banner{
-      margin-top: 15px;
-      width: 110%;
-      height: 50vh;
-      display: grid;
-      place-items: center;
-      background: url('../images/homepage/banner.png');
-      background-repeat: no-repeat;
-      z-index: 5;
-  }
-  .mascotte{
-    position: relative;
-    left: -35vw;
-    top: -350px;
-  }
-    .balloon {
-      height: 55vh;
-      left: 25vh;
-      top: 600px;
-      margin-bottom: 1000px;
-      }
-      .balloon p {
-        left: -5px;
-      }
-      .balloon h1 {
-        position: relative;
-        margin-left: -9px;
-        left: 2px;
-      }
-      footer {
-        width: 89%;
-        }
-  }
-  /* Login pagina */
-.login {
+ /* Login pagina */
+ .login {
   position: relative;
   left: 450px;
   top: 5px;
@@ -184,6 +132,62 @@ padding: 50px;
   font-size: 50px;
 }
 /* Einde login pagina */
+  @media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      position: relative;
+      top: -100px;
+    }
+    .topnav {
+      position: relative;
+      left: 20px;
+    }
+    .naam{
+      position: relative;
+      left: 180px;
+      top: -90px;
+      height: 50px;
+      width: 200px;
+    }
+    .banner{
+      margin-top: 15px;
+      width: 120%;
+      height: 50vh;
+      display: grid;
+      place-items: center;
+      background: url('../images/homepage/banner.png');
+      background-repeat: no-repeat;
+      z-index: 5;
+  }
+  .mascotte{
+    position: relative;
+    left: -35vw;
+    top: -350px;
+  }
+    .balloon {
+      height: 55vh;
+      left: 25vh;
+      top: 600px;
+      margin-bottom: 1000px;
+      }
+      .balloon p {
+        left: -5px;
+        top: -100px;
+      }
+      .balloon h1 {
+        position: relative;
+        margin-left: -9px;
+        left: 20px;
+        top: -30px;
+        font-size: 2rem;
+      }
+      footer {
+        top: 100px;
+        width: 89%;
+        }
+  }
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
