@@ -5,36 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Mate | Home</title>
+    <!-- Koppeling css en js -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/menu.js" type="text/javascript"></script>
-   
-</head>
-<body>
-        <header class="header">
-        <img class="logo" src="images/logo-math.png" alt="Logo Math Mate">
-        <h1 class="naam">Math Mate</h1>
-        <nav class="bigscreen">
-            <a href="index.html">Home</a>
-            <a href="presentatie.html">Presentatie</a>
-            <div class="dropdown">
-              <button class="dropbtn">Berekeningen</button>
-              <div class="dropdown-content">
-                <a href="mak_berekeningen.html">Makkelijk</a>
-                <a href="moei_berekeningen.html">Moeilijk</a>
-              </div>
-            </div>
-            <a href="reeksen.html">Reeksen</a>
-            <div class="dropdown">
-              <button class="dropbtn">Games</button>
-              <div class="dropdown-content">
-                <a href="#">Rad van fortuin</a>
-                <a href="#">Shoot the pig</a>
-              </div>
-            </div>
-            <a href="login.html">Login</a>
-        </nav>
-        
-    </header>
+    <script src="js/berekeningen.js" type="text/javascript"></script>
+    <script src="js/global.js" type="text/javascript"></script>
+  </head>
+  <header>
+    <img class="logo" src="images/logo-math.png" alt="">
+    <h1 class="naam">Math mate</h1>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="mak_berekeningen.html">Makkelijk</a>
+    <a href="moei_berekeningen.html">Moeilijk</a>
+    <a href="reeksen.html">Reeksen</a>
+    <a href="#">Rad van fortuin</a>
+    <a href="#">Shoot the pig</a>
+    <a href="login.html">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </div>
+  </header>
+  <body>
   <section class="banner">
     <h1 class="welkom">Welkom</h1>
   </section>

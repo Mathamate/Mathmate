@@ -4,59 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Mate | Reeksen</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Math Mate | Makkelijke Berekeningen</title>
+    <!-- Koppeling css en js -->
     <link rel="stylesheet" type="text/css" href="css/berekeningen.css">
     <script src="js/reeksen.js" type="text/javascript"></script>
+    <script src="js/global.js" type="text/javascript"></script>
   </head>
+  <header>
+    <img class="logo" src="images/logo-math.png" alt="">
+    <h1 class="naam">Math mate</h1>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="mak_berekeningen.html">Makkelijk</a>
+    <a href="moei_berekeningen.html">Moeilijk</a>
+    <a href="reeksen.html">Reeksen</a>
+    <a href="#">Rad van fortuin</a>
+    <a href="#">Shoot the pig</a>
+    <a href="login.html">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </div>
+  </header>
   <body>
-          <header class="header">
-          <img class="logo" src="images/logo-math.png" alt="Logo Math Mate">
-          <h1 class="naam">Math Mate</h1>
-          <nav class="bigscreen">
-              <a href="index.html">Home</a>
-              <a href="presentatie.html">Presentatie</a>
-              <div class="dropdown">
-                <button class="dropbtn">Berekeningen</button>
-                <div class="dropdown-content">
-                  <a href="mak_berekeningen.html">Makkelijk</a>
-                  <a href="moei_berekeningen.html">Moeilijk</a>
-                </div>
-              </div>
-              <a href="reeksen.html">Reeksen</a>
-              <div class="dropdown">
-                <button class="dropbtn">Games</button>
-                <div class="dropdown-content">
-                  <a href="#">Rad van fortuin</a>
-                  <a href="#">Shoot the pig</a>
-                </div>
-              </div>
-              <a href="login.html">Login</a>
-          </nav>
-          
-      </header>
-  <div class="main">
-    <svg viewBox="0 0 105 105">
-      <path d="M 25,60 
-               a 20,20 1 0,0 0,40 
-               h 50 
-               a 20,20 1 0,0 0,-40 
-               a 10,10 1 0,0 -15,-10 
-               a 15,15 1 0,0 -35,10  
-               z "/>
-        </svg>
-    <img class="mascotte2" src="images/Mascotte.png" alt="mascotte">
-    <h1 class="kopstuk">Reeksen</h1>
-    <section id="form">
-    <section class="knoppen3">
-      <button onclick="fabonacci" class="Fabonacci" type="submit" value="Fabonacci">Fabonacci</button>
-      <button onclick="priemgetallen" class="Priemgetallen" type="submit" value="Priemgetallen">Priemgetallen</button>
-    </section>
-      <textarea class="invoer" name="invoer" rows="6" cols="25">Voer hier je berekening in</textarea><br/>
-      <input class="Bereken-knop" type="submit" value="Bereken"><input class="Clear" type="reset" value="Clear">
-      <div class="uitvoer" name="uitvoer" rows="6" cols="25"></div><br/>
-  </section>
-</div>
+
+
 <footer>Disclaimer</footer>
 </body>
 </html>
