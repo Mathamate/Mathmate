@@ -87,11 +87,13 @@ top: 100vh;
 }
 .priem, .fibonacci, .factor, .factoren, .macht {align-self: center;}
 .flex {left: 410px;}
-#d2, #d3 {
+#d2, #d3, #d1{
   background-color: white;
   border: 1px black solid;
   height: 50px;
+  min-width: 150px;
 }
+
 .pr{
   position: relative;
   left: 410px;
