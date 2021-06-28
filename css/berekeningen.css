@@ -87,6 +87,12 @@ p{
   position: relative;
   left: 410px;
 }
+.plus{
+  position: absolute;
+  top: 40vh;
+  width: 20vh;
+  left: 38%;
+}
   @media screen and (max-width: 600px) {
     .topnav a {display: none;}
     .topnav a.icon {

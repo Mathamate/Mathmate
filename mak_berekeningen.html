@@ -28,19 +28,45 @@
   </header>
   <body>
     <article>
-      <article class="plus">
-        <input type="value" value="" id="plus1">
-        <input type="value" value="" id="plus2">
-        <button onclick="plus">reken uit</button>
-        <div id="plus3">hier</div>
+  
+       <article class="plus">
+        <form>
+          eerste getal : <input type="text" id="firstNumber" /><br>
+          tweede getal: <input type="text" id="secondNumber" /><br>
+          <input type="button" onClick="plus()" Value="+" />
+          <input type="button" onClick="multiplyBy()" Value="X" />
+          <input type="button" onClick="divideBy()" Value="/" />
+          </form>
+          <p>The Result is : <br>
+          <span id = "result"></span>
+          </p>
         <script>
-          function plus(){
-            var plus1 = document.getElementById("plus1").value;
-            var plus2 = document.getElementById("plus2").value;
-            var antwoord = plus1 + plus2;
-            document.getElementById("plus3").innerHTML = antwoord;
-          }
-          
+         function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+function plus() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 + num2;
+}
+function min() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        num3 = num1 - num2;
+document.getElementById("result").innerHTML = num3;
+}
         </script>
       </article>
     </article>
