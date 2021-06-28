@@ -27,8 +27,37 @@
     </div>
   </header>
   <body>
-
-
+    <br><br><br><br>
+    <h1 class="titel">Makkelijke berekeningen</h1>
+    <p class="pr">Op deze pagina kun je getallen optellen, aftrekken, delen, vermenigvuldigen en machtreeksen uitrekenen</p>
+    <br><br><br><br>
+    
+       <article class="plus">
+        <br><br>
+        <form>
+          <h2 class="getal">Eerste getal:</h2>
+          <input type="text" id="firstNumber" /><br>
+          <h2 class="getal">Tweede getal:</h2>
+          <input type="text" id="secondNumber" /><br><br>
+          <input type="button" onClick="plus()" Value="+" />
+          <input type="button" onClick="min()" Value="-" />
+          <input type="button" onClick="multiplyBy()" Value="X" />
+          <input type="button" onClick="divideBy()" Value="/" />
+          </form><br>
+          <div id="result"><p>Het antwoord is : <br></div>
+          </p>
+          <img src="images/Mascotte.png" class="mascotte3" alt="">
+      </article>
+      <br><br><br><br>
+      <article class="macht">
+        <h2 class="getal">Macht van</h2>
+        <input type="value" name="macht" id="macht"><br><br>
+        <h2 class="getal">Macht tot</h2>
+        <input type="value" name="macht" id="macht2"><br><br>
+        <button onclick="berekenMacht()">reken uit</button>
+      <br><br>
+      <div id="demo">Antwoord:</div>
+      </article>
 <footer>Disclaimer</footer>
 </body>
 </html>

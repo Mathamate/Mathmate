@@ -1,21 +1,25 @@
-html {background-color: #D2FEFF;}
+html {
+  background-color: #D2FEFF;
+  overflow-x: hidden;
+  }
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
   .logo {
-      position: relative;
-      width: 150px;
-      float: left;
-      padding-right: 250px;
-      padding-left: 10px;
-      z-index: 5;
-  }
-  .naam {
     position: relative;
-    left: -200px;
-    top: 65px;
-  }
+    width: 150px;
+    float: left;
+    padding-right: 250px;
+    padding-left: 10px;
+    z-index: 5;
+}
+.naam {
+  position: relative;
+  left: -200px;
+  top: 65px;
+}
   .topnav {
     z-index: 10;
   }
@@ -37,21 +41,28 @@ body {
     color: black;
   }
   
-  .topnav a.active {
-    background-color: lightblue;
-    color: black;
-  }
-  
   .topnav .icon {
     display: none;
   }
 
-.mascotte{
-width: 15vh;
+.mascotte, .mascotte2{
+width: 10vh;
 position: absolute;
-left: -10vw;
-top: 8vh;
+left: -100px;
+top: 335px;
 }
+.mascotte2{
+  width: 10vh;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+}
+.mascotte3{
+  width: 10vh;
+  position: absolute;
+  left: -100px;
+  top: 228px;
+  }
 footer {
 background-color: black;
 height: 30vh;
@@ -60,6 +71,56 @@ color: white;
 padding: 50px;
 position: relative;
 top: 100vh;
+}
+.getal{
+  width: 500px;
+}
+.flex{
+  position: absolute;
+  top: 40vh;
+  left: 35%;
+  flex-direction: column;
+  min-width: 300px;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+}
+.priem, .fibonacci, .factor, .factoren, .macht {align-self: center;}
+.flex {left: 410px;}
+#d2, #d3, #d1{
+  background-color: white;
+  border: 1px black solid;
+  height: 50px;
+  min-width: 150px;
+}
+
+.pr{
+  position: relative;
+  left: 410px;
+}
+.plus {
+  position: absolute;
+  top: 40vh;
+  width: 20vh;
+  left: 410px;
+}
+.macht{
+  position: absolute;
+  top: 100vh;
+  width: 20vh;
+  left: 410px;
+}
+#demo {
+  border: 1px black solid;
+  background-color: white;
+  min-width: 150px;
+  padding-left: 5px;
+}
+#result {
+  border: 1px black solid;
+  background-color: white;
+  min-width: 150px;
+  padding-left: 5px;
 }
   @media screen and (max-width: 600px) {
     .topnav a {display: none;}
@@ -83,16 +144,51 @@ top: 100vh;
     }
     
   .mascotte{
-    position: relative;
-    left: -35vw;
-    top: -350px;
+    position: absolute;
+    left: 320px;
+    top: 100px;
   }
-    
+  .mascotte2 {
+    position: absolute;
+    left: 320px;
+    top: 320px;
+  }
+  .mascotte3 {
+    position: absolute;
+    left: -90px;
+    top: 210px;
+  }
+  .plus, .macht {
+    left: 125px;
+    top: 300px;
+  }
+   .flex{
+     left: 30px;
+     top: 290px;
+   }
+   .titel {
+     position: relative;
+     left: 30px;
+     top: -60px;
+     width: 500px;
+     font-size: 1.5rem;
+   }
+   .pr{
+     left: 30px;
+     top: -65px;
+     width: 370px;
+   }
+   .macht{
+     top: 650px;
+   }
+.getal {
+  width: 200px;
+}
       footer {
+        top: 500px;
         width: 89%;
         }
   }
-  
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
