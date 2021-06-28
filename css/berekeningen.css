@@ -91,6 +91,12 @@ top: 100vh;
 .macht{
   align-self: center;
 }
+.plus{
+  position: absolute;
+  top: 40vh;
+  width: 20vh;
+  left: 38%;
+}
 
 
 
