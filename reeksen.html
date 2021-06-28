@@ -8,6 +8,7 @@
     <!-- Koppeling css en js -->
     <link rel="stylesheet" type="text/css" href="css/berekeningen.css">
     <script src="js/reeksen.js" type="text/javascript"></script>
+    <script src="js/berekeningen.js" type="text/javascript"></script>
     <script src="js/global.js" type="text/javascript"></script>
   </head>
   <header>
@@ -27,8 +28,83 @@
     </div>
   </header>
   <body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
+    <article class="flex">
+    <article class="priem">
+      <br>
+      priemgetallen tot <br><br>
+      <input type="text" name="t2" id="t2"><br><br>
+    <input type="button" value="reken uit" onclick="show_prime()">
+    <div id=d2></div>
+    <script type="text/javascript">
+    function show_prime(){
+    x=document.getElementById("t2").value
+    x=parseInt(x)
+    if(Number.isInteger(x)){
+    str='';
+    for (i=2;i<x;i++){
+      flag=0;
+      
+      for(j=2;j<i;j++){
+      if(i%j == 0){
+      flag=1;
+      break;
+      }
+      
+      }	
+     if(flag==0){
+      str= str + i + ","
+    }
+    
+    }
+    document.getElementById('d2').innerHTML="priem getallen zijn :  " + str
+    }else{
+    document.getElementById('d2').innerHTML="voer een getal in  "	
+    }
+    }
+    </script>
+    </article>
+    
+    
+    
+    
+    
+    <article class="fibonacci">
+      <br>
+      <br>
+      fibonacci<br><br>
+      <input type="value" id="fib"><br>
+      <p id="fibonacci"></p><br>
+      <button onclick="fibonacci()">Click me</button>
+      <script>
+      function fibonacci(){
+        var getal1 = 0;
+        var getal2 = 1;
+        var fib = document.getElementById("fib").value
+    
+        var ant = getal1 + getal2;
+    
+        document.getElementById("fibonacci").innerHTML = "0";
+        
+        
+        while (ant < fib){
+            document.getElementById('fibonacci').innerHTML += "-" + ant;
+            ant = getal1 + getal2;
+            getal1 = getal2;
+            getal2 = ant;
+        }
+    }
+    
+    </script>
+    </article>
+  </article>
 <footer>Disclaimer</footer>
 </body>
 </html>

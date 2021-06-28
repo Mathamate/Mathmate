@@ -27,6 +27,23 @@
     </div>
   </header>
   <body>
+    <article>
+      <article class="plus">
+        <input type="value" value="" id="plus1">
+        <input type="value" value="" id="plus2">
+        <button onclick="plus">reken uit</button>
+        <div id="plus3">hier</div>
+        <script>
+          function plus(){
+            var plus1 = document.getElementById("plus1").value;
+            var plus2 = document.getElementById("plus2").value;
+            var antwoord = plus1 + plus2;
+            document.getElementById("plus3").innerHTML = antwoord;
+          }
+          
+        </script>
+      </article>
+    </article>
 
 
 <footer>Disclaimer</footer>

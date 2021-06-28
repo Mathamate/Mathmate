@@ -27,7 +27,77 @@
     </div>
   </header>
   <body>
+    <article class="flex">
+    <article class="factor"><br>
+      factor <br><input type="text" name="t3" id="t3"><br>
+  
+    <input type="button" value="reken uit" onclick="show_factorial()">
+    <div id=d3></div>
+    <script type="text/javascript">
+    function show_factorial(){
+    x=document.getElementById("t3").value
+    x=parseInt(x)
+    if(Number.isInteger(x)){
+    b=1
+    for (i=1;i<=x;i++){
+        b=b*i
+    }
+    document.getElementById('d3').innerHTML="Factor van "+x+" is : "+b
+    }else{
+    document.getElementById('d3').innerHTML="voer in  "	
+    }
+    }
+    </script>
+    </article>
 
+
+    <article class="factoren">
+      <br>
+      <br>
+      <br>
+      factoren<br>
+      <input type="text" name="t1" id="t1">
+      <input type="button" value="reken uit" onclick="factor()">
+      <div id=d1></div>
+      <script type="text/javascript">
+      function factor(){
+      x=document.getElementById("t1").value
+      x=parseInt(x)
+      if(Number.isInteger(x)){
+      str='';
+      //Highest divisor can be less than half of the input number
+      x1=Math.ceil(x/2)
+      for(i=2;i<=x1;i++){
+      if(x%i==0){
+      str = str + i + ',' 
+      }
+      }
+      document.getElementById('d1').innerHTML="Factors are:  " + str
+      }else{
+      document.getElementById('d1').innerHTML="Enter an Integer  "	
+      }	
+      }
+      </script></article>
+    <br><br>
+    <article class="macht">
+      macht van<br><input type="value" name="macht" id="macht"><br>
+      macht tot<br><input type="value" name="macht" id="macht2"><br>
+      <button onclick="myFunction()">reken uit</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+        var num1 = document.getElementById("macht").value;
+        var num2 = document.getElementById("macht2").value;
+      document.getElementById("demo").innerHTML = Math.pow(num1, num2);
+    }
+    </script>
+    
+      
+    </article>
+  </article>
+    
 
 <footer>Disclaimer</footer>
 </body>
