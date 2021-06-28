@@ -64,8 +64,9 @@ top: 335px;
   top: 228px;
   }
 footer {
+position: relative;
 background-color: black;
-height: 30vh;
+height: 10vh;
 text-align: center;
 color: white;
 padding: 50px;
@@ -121,6 +122,14 @@ top: 100vh;
   background-color: white;
   min-width: 150px;
   padding-left: 5px;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+footer a:hover {
+color: lightblue;
 }
   @media screen and (max-width: 600px) {
     .topnav a {display: none;}
@@ -184,10 +193,14 @@ top: 100vh;
 .getal {
   width: 200px;
 }
-      footer {
-        top: 500px;
-        width: 89%;
-        }
+footer {
+  position: relative;
+  top: 500px;
+  width: 85%;
+  }
+  footer a{
+    display: none;
+  }
   }
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}

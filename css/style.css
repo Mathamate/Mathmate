@@ -36,8 +36,14 @@ body {
     background-color: lightblue;
     color: black;
   }
-  
-
+  footer a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+  }
+footer a:hover {
+  color: lightblue;
+}
   .topnav .icon {
     display: none;
   }
@@ -102,11 +108,13 @@ left: -10vw;
 top: 8vh;
 }
 footer {
+position: relative;
 background-color: black;
-height: 30vh;
+height: 10vh;
 text-align: center;
 color: white;
 padding: 50px;
+left: 0px;
 }
  /* Login pagina */
  .login {
@@ -142,7 +150,7 @@ padding: 50px;
     }
     .topnav {
       position: relative;
-      left: -5px;
+      left: 20px;
       top: -50px;
     }
     .naam{
@@ -186,7 +194,10 @@ padding: 50px;
       }
       footer {
         top: 100px;
-        width: 89%;
+        width: 94%;
+        }
+        footer a{
+          display: none;
         }
         .login {
           left: 0px;
