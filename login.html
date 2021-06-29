@@ -1,38 +1,4 @@
-<?php
-$error = " ";
-if(isset($_POST['submit'])){
-    if (!empty($_POST['username']) && !empty($_POST['password'])){
 
-        require('dbconnect.php');
-
-        $username = trim($_POST['username']);
-        $pass = trim($_POST['password']);
-
-        $sql = "SELECT * FROM gebruikers WHERE username = '".$username."'";
-        if($result = $conn->query($sql)){
-
-            $dbuser = $result->fetch_row();
-            $dbpass = $dbuser[2];
-
-            // $aantal = $result->num_rows;
-
-         }
-         //else{
-        //     $error = "Query mislukt";
-        // }
-
-        if (password_verify($pass, $dbpass)) {
-            session_start();
-            $_SESSION['ingelogddb'] = true;
-            header("Location: ingelogddb.php");
-        } else {
-            $error = "Geen juiste gegevens ingevuld";
-        }
-    } else {
-        $error = "Vul je gegevens in";
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
