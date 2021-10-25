@@ -1,50 +1,66 @@
+@media screen {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  html {
+      font-size: 62.5%;
+      font-family: sans-serif;
+      background-color: #D2FEFF;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  li {list-style: none;}
+  a {text-decoration: none;}
+  .header{border-bottom: 1px solid black;}
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: whitesmoke;
+      padding: 1rem 1.5rem;
+  }
+  .hamburger {display: none;}
+  .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: whitesmoke;
+  }
+  .nav-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .nav-item {margin-left: 3rem;}
+  .nav-link{
+      font-size: 19px;
+      color: black;
+  }
+  .nav-link:hover{color: lightblue;}
+  .nav-logo img {
+    position: relative;
+    float: left;
+      width: 70px;
+      z-index: 5;
+  }
 html {
   background-color: #D2FEFF;
   overflow-x: hidden;
+  height: 100%;
   }
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  .logo {
-    position: relative;
-    width: 150px;
-    float: left;
-    padding-right: 250px;
-    padding-left: 10px;
-    z-index: 5;
 }
-.naam {
-  position: relative;
-  left: -200px;
-  top: 65px;
-}
-  .topnav {
-    z-index: 10;
-  }
-  .topnav a {
-    position: relative;
-    float: left;
-    display: block;
-    color: black;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 17px;
-    border: 1px black solid;
-    background-color: whitesmoke;
-    z-index: 10;
-  }
-  
-  .topnav a:hover {
-    background-color: lightblue;
-    color: black;
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
-
 .mascotte, .mascotte2{
 width: 10vh;
 position: absolute;
@@ -64,18 +80,27 @@ top: 335px;
   top: 228px;
   }
 footer {
-position: relative;
-background-color: black;
-height: 10vh;
-text-align: center;
-color: white;
-padding: 50px;
-position: relative;
-top: 100vh;
+  position: relative;
+  background-color: black;
+  height: 10vh;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  bottom: -700px;
 }
-.getal{
-  width: 500px;
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: -500px;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  height: 10vh;
+  padding: 50px;
+  text-align: center;
 }
+.getal{width: 500px;}
 .flex{
   position: absolute;
   top: 40vh;
@@ -88,13 +113,6 @@ top: 100vh;
 }
 .priem, .fibonacci, .factor, .factoren, .macht {align-self: center;}
 .flex {left: 410px;}
-#d2, #d3, #d1{
-  background-color: white;
-  border: 1px black solid;
-  height: 50px;
-  min-width: 150px;
-}
-
 .pr{
   position: relative;
   left: 410px;
@@ -111,109 +129,145 @@ top: 100vh;
   width: 20vh;
   left: 410px;
 }
-#demo {
+#result-macht, #result, #calculatefactor, #showfactor, #priemtot{
+  position: relative;
   border: 1px black solid;
   background-color: white;
-  min-width: 150px;
+  min-width: fit-content;
+  height: fit-content;
   padding-left: 5px;
 }
-#result {
-  border: 1px black solid;
-  background-color: white;
-  min-width: 150px;
-  padding-left: 5px;
-}
-footer a{
+#calculatefactor {margin-bottom: 200px;}
+.footer a, footer a{
   text-decoration: none;
   color: white;
   padding: 20px;
 }
-footer a:hover {
-color: lightblue;
+.button {
+  width: 20px;
+  height: 20px;
 }
-  @media screen and (max-width: 600px) {
-    .topnav a {display: none;}
-    .topnav a.icon {
-      float: right;
+button {padding: 5px;}
+.footer a:hover, footer a:hover {color: lightblue;}
+@media only screen and (max-width: 668px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 9rem;
+      flex-direction: column;
+      background-color: whitesmoke;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      transition: 0.3s;
+  }
+  .nav-menu.active {left: 0;}
+  .nav-item {margin: 2.5rem 0;}
+  .hamburger {
       display: block;
-      position: relative;
-      top: -100px;
-    }
-    .topnav {
-      position: relative;
-      left: -5px;
-      top: -50px;
-    }
-    .naam{
-      position: relative;
-      left: 180px;
-      top: -90px;
-      height: 50px;
-      width: 200px;
-    }
-    
-  .mascotte{
+      cursor: pointer;
+      background-color: whitesmoke;
+  }
+  .bar {background-color: black;}
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+      background-color: black;
+  }
+  .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: black;
+  }
+ 
+.mascotte, .mascotte2{
+  width: 10vh;
+  position: absolute;
+  left: -100px;
+  top: 335px;
+  }
+  .mascotte2{
+    width: 10vh;
     position: absolute;
-    left: 320px;
-    top: 100px;
+    left: -100px;
+    top: 120px;
   }
-  .mascotte2 {
+  .mascotte3{
+    width: 10vh;
     position: absolute;
-    left: 320px;
-    top: 320px;
+    left: -100px;
+    top: 228px;
+    }
+  footer {
+    position: relative;
+    background-color: black;
+    height: 10vh;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    bottom: -700px;
   }
-  .mascotte3 {
+  .footer {
     position: absolute;
-    left: -90px;
-    top: 210px;
+    right: 0;
+    bottom: -500px;
+    left: 0;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    padding: 50px;
+    text-align: center;
   }
-  .plus, .macht {
-    left: 125px;
-    top: 300px;
+  .getal{width: 500px;}
+  .flex{
+    position: absolute;
+    top: 40vh;
+    left: 35%;
+    flex-direction: column;
+    min-width: 300px;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
   }
-   .flex{
-     left: 30px;
-     top: 290px;
-   }
-   .titel {
-     position: relative;
-     left: 30px;
-     top: -60px;
-     width: 500px;
-     font-size: 1.5rem;
-   }
-   .pr{
-     left: 30px;
-     top: -65px;
-     width: 370px;
-   }
-   .macht{
-     top: 650px;
-   }
-.getal {
-  width: 200px;
+  .priem, .fibonacci, .factor, .factoren, .macht {align-self: center;}
+  .flex {left: 410px;}
+  .pr{
+    position: relative;
+    left: 410px;
+  }
+  .plus {
+    position: absolute;
+    top: 40vh;
+    width: 20vh;
+    left: 410px;
+  }
+  .macht{
+    position: absolute;
+    top: 100vh;
+    width: 20vh;
+    left: 410px;
+  }
+  #result-macht, #result, #calculatefactor, #showfactor, #priemtot{
+    position: relative;
+    border: 1px black solid;
+    background-color: white;
+    min-width: fit-content;
+    height: fit-content;
+    padding-left: 5px;
+  }
+  #calculatefactor {margin-bottom: 200px;}
+  .footer a, footer a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer a:hover, footer a:hover {color: lightblue;}
 }
-footer {
-  position: relative;
-  top: 500px;
-  width: 85%;
-  }
-  footer a{
-    display: none;
-  }
-  }
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
+}
 

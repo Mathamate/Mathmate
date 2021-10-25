@@ -10,48 +10,64 @@
     <script src="js/berekeningen.js" type="text/javascript"></script>
     <script src="js/global.js" type="text/javascript"></script>
   </head>
-  <header>
-    <img class="logo" src="images/logo-math.png" alt="">
-    <h1 class="naam">Math mate</h1>
-<div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Home</a>
-    <a href="presentatie.html" class="active">Presentatie</a>
-    <a href="mak_berekeningen.html">Makkelijk</a>
-    <a href="moei_berekeningen.html">Moeilijk</a>
-    <a href="reeksen.html">Reeksen</a>
-    <a href="#">Rad van fortuin</a>
-    <a href="#">Shoot the pig</a>
-    <a href="login.html">Login</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-    </div>
-  </header>
   <body>
-    <br><br><br><br>
-    <h1 class="titel">Moeilijke berekeningen</h1>
-    <p class="pr">Hier kun je factoren berekenen</p>
-    <article class="flex">
-    <article class="factor">
-      <br><br>
-      <h2>Factor van</h2>
-    <input type="text" name="t3" id="t3"><br><br>
-    <input type="button" value="reken uit" onclick="show_factorial()"><br><br>
-    <div id="d3"></div>
+    <header class="header">
+      <nav class="navbar">
+          <a href="#" class="nav-logo"><img src="images/logo-math.png" alt="Logo Math Mate"></a>
+          <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="presentatie.html" class="nav-link">Presentatie</a>
+              </li>
+              <li class="nav-item">
+                  <a href="mak_berekeningen.html" class="nav-link">Makkelijk</a>
+              </li>
+  
+              <li class="nav-item">
+                  <a href="moei_berekeningen.html" class="nav-link">Moeilijk</a>
+              </li>
+              <li class="nav-item">
+                  <a href="reeksen.html" class="nav-link">Reeksen</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Rad van fortuin</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Shoot the pig</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+          <div class="hamburger" onclick="">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+    </header>
+      <br><br><br><br>
+      <h1 class="titel">Moeilijke berekeningen</h1>
+      <p class="pr">Hier kun je factoren berekenen</p>
+      <article class="flex">
+        <article class="factor">
+            <br><br>
+            <h2>Factor van</h2>
+          <input type="text" name="t3" id="t3"><br><br>
+          <input type="button" value="reken uit" onclick="show_factorial()"><br><br>
+          <div id="showfactor">Factor is:</div>
+        </article>
+        <article class="factoren">
+          <h2>factoren</h2><br>
+          <input type="text" name="t1" id="t1"><br><br>
+          <input type="button" value="reken uit" onclick="factor()"><br><br>
+          <div id="calculatefactor">Kun je delen door:</div>
+        </article>
     </article>
 
-
-    <article class="factoren">
-      <h2>factoren</h2><br>
-      <input type="text" name="t1" id="t1"><br><br>
-      <input type="button" value="reken uit" onclick="factor()"><br><br>
-      <div id="d1"></div>
-      </article>
-  
-  </article>
-    
-
-<footer>Disclaimer: Deze website is gemaakt door eerstejaars Software Development studenten, fouten kunnen voorkomen
+<div class="footer">Disclaimer: Deze website is gemaakt door eerstejaars Software Development studenten, fouten kunnen voorkomen
   <br><br>
   <a href="index.html" class="active">Home</a>
   <a href="presentatie.html" class="active">Presentatie</a>
@@ -62,6 +78,7 @@
   <a href="#">Shoot the pig</a>
   <a href="login.html">Login</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i></footer>
+    <i class="fa fa-bars"></i></div>
+    <script src="js/test.js" type="text/javascript"></script>
 </body>
 </html>

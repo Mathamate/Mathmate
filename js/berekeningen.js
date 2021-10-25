@@ -20,18 +20,19 @@ function plus()
         num3 = +num1 + +num2;
         document.getElementById("result").innerHTML = "Het antwoord is : "+num3;
 }
-function min() 
+function subtract() 
 { 
         num1 = document.getElementById("firstNumber").value;
         num2 = document.getElementById("secondNumber").value;
-        document.getElementById("result").innerHTML = num1-num2;
+        num3 = num1 - num2;
+        document.getElementById("result").innerHTML = "Het antwoord is : "+num3;
 }
 
     // Machten
 function berekenMacht() {
     var num1 = document.getElementById("macht").value;
     var num2 = document.getElementById("macht2").value;
-  document.getElementById("demo").innerHTML ="Antwoord: " + Math.pow(num1, num2);
+  document.getElementById("result-macht").innerHTML ="Antwoord: " + Math.pow(num1, num2);
 }
 // Moeilijke berekeningen
     // Factorizer
@@ -43,9 +44,9 @@ function show_factorial(){
     for (i=1;i<=x;i++){
         b=b*i
     }
-    document.getElementById("d3").innerHTML="Factor van "+x+" is : "+b;
+    document.getElementById("showfactor").innerHTML="Factor van "+x+" is : "+b;
     }else{
-    document.getElementById("d3").innerHTML="voer volledig getal in";	
+    document.getElementById("showfactor").innerHTML="voer volledig getal in";	
     }
 }
     // Factor
@@ -58,11 +59,11 @@ function factor(){
     x1=Math.ceil(x/2)
     for(i=2;i<=x1;i++){
     if(x%i==0){
-    str = str + i + ',' 
+    str =  str + i + '<br>'; 
     }
     }
-    document.getElementById("d1").innerHTML= x +" "+ "kan je delen door, 1 " + str + x +"<br>";
+    document.getElementById("calculatefactor").innerHTML= x +" "+ "kan je delen door:" + '<br>' +  "1" + '<br>' + str + x +"<br>";
     }else{
-    document.getElementById("d1").innerHTML="Vul een volledig getal in";	
+    document.getElementById("calculatefactor").innerHTML="Vul een volledig getal in";	
     }	
 }

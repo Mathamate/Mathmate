@@ -15,13 +15,13 @@ function show_prime(){
       
       }	
      if(flag==0){
-      str= str + i + ","
+      str= str + i + " " + ","
     }
     
     }
-    document.getElementById('d2').innerHTML="Priem getallen zijn :  " + str
+    document.getElementById('priemtot').innerHTML="Priem getallen zijn:" + " " + str
     }else{
-    document.getElementById('d2').innerHTML="Voer een getal in  "	
+    document.getElementById('priemtot').innerHTML="Voer een getal in"	
     }
     }
 
@@ -33,10 +33,10 @@ function show_prime(){
     
         var ant = getal1 + getal2;
     
-        document.getElementById("d3").innerHTML = "0";
+        document.getElementById("fibgetallen").innerHTML = "Fibonacci getallen zijn: <br> 0";
 
         while (ant < fib){
-            document.getElementById('d3').innerHTML += "-" + ant;
+            document.getElementById('fibgetallen').innerHTML += "<br>" + ant;
             ant = getal1 + getal2;
             getal1 = getal2;
             getal2 = ant;

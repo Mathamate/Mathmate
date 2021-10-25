@@ -10,24 +10,44 @@
     <script src="js/reeksen.js" type="text/javascript"></script>
     <script src="js/global.js" type="text/javascript"></script>
   </head>
-  <header>
-    <img class="logo" src="images/logo-math.png" alt="">
-    <h1 class="naam">Math mate</h1>
-<div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Home</a>
-    <a href="presentatie.html" class="active">Presentatie</a>
-    <a href="mak_berekeningen.html">Makkelijk</a>
-    <a href="moei_berekeningen.html">Moeilijk</a>
-    <a href="reeksen.html">Reeksen</a>
-    <a href="#">Rad van fortuin</a>
-    <a href="#">Shoot the pig</a>
-    <a href="login.html">Login</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-    </div>
-  </header>
   <body>
+    <header class="header">
+      <nav class="navbar">
+          <a href="#" class="nav-logo"><img src="images/logo-math.png" alt="Logo Math Mate"></a>
+          <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="presentatie.html" class="nav-link">Presentatie</a>
+              </li>
+              <li class="nav-item">
+                  <a href="mak_berekeningen.html" class="nav-link">Makkelijk</a>
+              </li>
+  
+              <li class="nav-item">
+                  <a href="moei_berekeningen.html" class="nav-link">Moeilijk</a>
+              </li>
+              <li class="nav-item">
+                  <a href="reeksen.html" class="nav-link">Reeksen</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Rad van fortuin</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Shoot the pig</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+          <div class="hamburger" onclick="">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+    </header>
     <br><br><br><br>
     <h1 class="titel">Reeksen</h1>
     <p class="pr">Op deze pagina kun je priemgetallen en fibonacci reeksen berekenen</p>
@@ -39,7 +59,7 @@
       <input type="text" name="t2" id="t2" placeholder="Vul priemgetal in"><br><br>
     <input type="button" value="Reken uit" onclick="show_prime()"><br><br>
     <img src="images/Mascotte.png" class="mascotte" alt="">
-    <div id=d2></div>
+    <div id=priemtot>Priem getallen zijn:</div>
     </article>
     <article class="fibonacci">
       <br>
@@ -48,7 +68,7 @@
       <p id="fibonacci"></p>
       <button onclick="fibonacci()">Reken uit</button><br><br>
       <img src="images/Mascotte.png" class="mascotte2" alt="">
-      <div id=d3></div>
+      <div id=fibgetallen>Fibonacci getallen zijn:</div>
     </article>
   </article>
 <footer>Disclaimer: Deze website is gemaakt door eerstejaars Software Development studenten, fouten kunnen voorkomen
@@ -63,5 +83,6 @@
   <a href="login.html">Login</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i></footer>
+    <script src="js/test.js" type="text/javascript"></script>
 </body>
 </html>
