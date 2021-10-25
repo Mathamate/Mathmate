@@ -105,7 +105,7 @@ padding: 50px;
 width: 15vh;
 position: absolute;
 left: -10vw;
-top: 8vh;
+top: 5vh;
 }
 footer {
 position: relative;
@@ -115,8 +115,9 @@ text-align: center;
 color: white;
 padding: 50px;
 left: 0px;
-font-size: 20px;
+font-size: 15px;
 }
+
  /* Login pagina */
  .login {
   position: relative;

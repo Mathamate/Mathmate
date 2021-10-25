@@ -32,7 +32,7 @@ function subtract()
 function berekenMacht() {
     var num1 = document.getElementById("macht").value;
     var num2 = document.getElementById("macht2").value;
-  document.getElementById("result-macht").innerHTML ="Antwoord: " + Math.pow(num1, num2);
+  document.getElementById("result-macht").innerHTML ="Antwoord:" + "<br>" + Math.pow(num1, num2);
 }
 // Moeilijke berekeningen
     // Factorizer
