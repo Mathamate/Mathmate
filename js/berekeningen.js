@@ -1,38 +1,71 @@
 // Makkelijke berekeningen
     // Plus, min, delen, vermenigvuldigen
-function multiplyBy()
-{
+function showMultiply(){
+    multiplyBy();
+    uitlegMultiply();
+}
+function multiplyBy(){
         num1 = document.getElementById("firstNumber").value;
         num2 = document.getElementById("secondNumber").value;
-        document.getElementById("result").innerHTML = "Het antwoord is : "+num1 * num2;
+        num3 = num1 * num2;
+        document.getElementById("result").innerHTML = "Het antwoord is : "+num3;
 }
-
-function divideBy() 
-{ 
+function uitlegMultiply(){
+    document.getElementById("uitleg").innerHTML = "Als je" + " " + num1 + " " + num2 + "x" + " " + "bij elkaar optelt krijg je" + " " + num3;
+}
+function showDivide(){
+    divideBy();
+    uitlegDevide();
+}
+function divideBy() { 
         num1 = document.getElementById("firstNumber").value;
         num2 = document.getElementById("secondNumber").value;
-        document.getElementById("result").innerHTML = "Het antwoord is : "+num1 / num2;
+        num3 = num1 / num2;
+        num3 = num3.toFixed(2);
+        document.getElementById("result").innerHTML = "Het antwoord is : "+num3;
 }
-function plus() 
-{ 
+function uitlegDevide() {
+    document.getElementById("uitleg").innerHTML = "Als je" + " " + num1 + " " + "deelt door" + " " + num2 + " " + "houd je" + " " + num3 + " " + "over";
+}
+function showPlus(){
+    plus();
+    uitlegPlus();
+}
+function plus() { 
         num1 = document.getElementById("firstNumber").value;
         num2 = document.getElementById("secondNumber").value;
         num3 = +num1 + +num2;
         document.getElementById("result").innerHTML = "Het antwoord is : "+num3;
 }
-function subtract() 
-{ 
+function uitlegPlus() {
+    document.getElementById("uitleg").innerHTML = "Als je" + " " + num1 + " " + "+" + " " + num2 + " " + "doet krijg je" + " " + num3;
+}
+function showSubtract() {
+    subtract();
+    uitlegSubtract();
+}
+function subtract() { 
         num1 = document.getElementById("firstNumber").value;
         num2 = document.getElementById("secondNumber").value;
         num3 = num1 - num2;
         document.getElementById("result").innerHTML = "Het antwoord is : "+num3;
 }
-
+function uitlegSubtract() {
+    document.getElementById("uitleg").innerHTML = "Als je" + " " + num1 + " " + "-" + " " + num2 + " " + "doet krijg je" + " " + num3;
+}
     // Machten
+function showMacht(){
+    berekenMacht();
+    uitlegMacht();
+}
 function berekenMacht() {
-    var num1 = document.getElementById("macht").value;
-    var num2 = document.getElementById("macht2").value;
-  document.getElementById("result-macht").innerHTML ="Antwoord:" + "<br>" + Math.pow(num1, num2);
+     num1 = document.getElementById("macht").value;
+     num2 = document.getElementById("macht2").value;
+     num3 = Math.pow(num1, num2);
+  document.getElementById("result-macht").innerHTML ="Antwoord:" + "<br>" + num3;
+}
+function uitlegMacht(){
+    document.getElementById("uitleg").innerHTML = "Als je" + " " + num2 + "x" + " "  + num1 + " " + "doet krijg je" + " " + num3;
 }
 // Moeilijke berekeningen
     // Factorizer
@@ -44,7 +77,7 @@ function show_factorial(){
     for (i=1;i<=x;i++){
         b=b*i
     }
-    document.getElementById("showfactor").innerHTML="Factor van "+x+" is : "+b;
+    document.getElementById("showfactor").innerHTML="Factor van "+x+ " is : " +"<br>" + b;
     }else{
     document.getElementById("showfactor").innerHTML="voer volledig getal in";	
     }

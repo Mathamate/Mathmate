@@ -61,14 +61,13 @@
           <input type="text" id="firstNumber" /><br>
           <h2 class="getal">Tweede getal:</h2>
           <input type="text" id="secondNumber" /><br><br>
-          <input class="button" type="button" onClick="plus()" Value="+" />
-          <input class="button" type="button" onClick="subtract()" Value="-" />
-          <input class="button" type="button" onClick="multiplyBy()" Value="X" />
-          <input class="button" type="button" onClick="divideBy()" Value="/" />
+          <input class="button" type="button" onClick="showPlus()" Value="+" />
+          <input class="button" type="button" onClick="showSubtract()" Value="-" />
+          <input class="button" type="button" onClick="showMultiply()" Value="X" />
+          <input class="button" type="button" onClick="showDivide()" Value="/" />
           </form>
           <br><br>
           <div id="result">Het antwoord is:</div>
-          <img src="images/Mascotte.png" class="mascotte3" alt="">
       </article>
       <br><br><br><br>
       <article class="macht">
@@ -76,10 +75,12 @@
         <input type="value" name="macht" id="macht"><br>
         <h2 class="getal">Macht tot</h2>
         <input type="value" name="macht" id="macht2"><br><br>
-        <button onclick="berekenMacht()">reken uit</button>
+        <button onclick="showMacht()">Reken uit</button>
         <br><br>
       <div id="result-macht">Het antwoord is:</div>
       </article>
+      <div id="uitleg">Hier komt de uitleg te staan</div>
+      <div class="mascotte-mak"><img src="images/Mascotte.png" alt="Mascotte"></div>
 <footer>Disclaimer: Deze website is gemaakt door eerstejaars Software Development studenten, fouten kunnen voorkomen
   <br><br>
   <a href="index.html" class="active">Home</a>
