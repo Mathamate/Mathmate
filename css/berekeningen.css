@@ -132,7 +132,7 @@ footer {
 }
 .factor, .priem {
   position: relative;
-  left: 150px;
+  left: 50px;
 }
 .factoren {
   position: relative;
@@ -180,62 +180,48 @@ button, .button2 {padding: 2px;}
 .footer a:hover, footer a:hover {color: lightblue;}
 
 @media only screen and (max-width: 668px) {
+  html {
+    overflow-x: hidden;
+  }
   .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 9rem;
-      flex-direction: column;
-      background-color: whitesmoke;
-      width: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      text-align: center;
-      transition: 0.3s;
-  }
-  .nav-menu.active {left: 0;}
-  .nav-item {margin: 2.5rem 0;}
-  .hamburger {
-      display: block;
-      cursor: pointer;
-      background-color: whitesmoke;
-  }
-  .bar {background-color: black;}
-  .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-      -webkit-transform: translateY(8px) rotate(45deg);
-      transform: translateY(8px) rotate(45deg);
-      background-color: black;
-  }
-  .hamburger.active .bar:nth-child(3) {
-      -webkit-transform: translateY(-8px) rotate(-45deg);
-      transform: translateY(-8px) rotate(-45deg);
-      background-color: black;
-  }
- 
-.mascotte, .mascotte2{
-  width: 10vh;
-  position: absolute;
-  left: -100px;
-  top: 335px;
-  }
-  .mascotte2{
-    width: 10vh;
     position: absolute;
-    left: -100px;
-    top: 120px;
-  }
-  .mascotte3{
-    width: 10vh;
-    position: absolute;
-    left: -100px;
-    top: 228px;
-    }
+    left: -1000px;
+    top: 9rem;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 600;
+}
+.nav-menu.active {left: 0;}
+.nav-item {margin: 2.5rem 0;}
+.hamburger {
+    display: block;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+.bar {background-color: black;}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+    background-color: black;
+}
+.hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: black;
+}
+
   footer {
     position: relative;
     background-color: black;
-    height: 10vh;
+    height: fit-content;
     text-align: center;
     color: white;
     padding: 50px;
@@ -244,43 +230,48 @@ button, .button2 {padding: 2px;}
   .footer {
     position: absolute;
     right: 0;
-    bottom: -500px;
+    top: 2000px;
     left: 0;
     padding: 1rem;
     background-color: black;
     color: white;
-    height: 10vh;
+    height: fit-content;
     padding: 50px;
     text-align: center;
   }
+  footer a, .footer a {
+    display: none;
+  }
   .getal{width: 500px;}
   .flex{
-    position: absolute;
+    position: relative;
     top: 40vh;
-    left: 35%;
+    left: 0;
     flex-direction: column;
     min-width: 300px;
-    justify-content: center;
-    align-self: center;
-    align-content: center;
   }
   .priem, .fibonacci, .factor, .factoren, .macht {align-self: center;}
-  .flex {left: 410px;}
-  .pr{
-    position: relative;
-    left: 410px;
-  }
   .plus {
     position: absolute;
-    top: 40vh;
+    top: 50vh;
     width: 20vh;
-    left: 410px;
+    left: 100px;
   }
   .macht{
     position: absolute;
-    top: 100vh;
+    top: 80vh;
     width: 20vh;
-    left: 410px;
+    left: 100px;
+  }
+  .mascotte-mak {
+    position: relative;
+    right: 485px;
+    top: 210px;
+  }
+  #uitleg {
+    position: absolute;
+    left: 100px;
+    top: 750px;
   }
   #result-macht, #result, #calculatefactor, #showfactor, #priemtot{
     position: relative;
@@ -295,6 +286,21 @@ button, .button2 {padding: 2px;}
     text-decoration: none;
     color: white;
     padding: 20px;
+  }
+  .factor, .priem {
+    position: relative;
+    left: 100px;
+    top: -200px;
+  }
+  .factoren {
+    position: relative;
+    left: 100px;
+    top: -102px;
+  }
+  .fibonacci {
+    position: relative;
+    left: 350px;
+    top: -107px;
   }
   
   .footer a:hover, footer a:hover {color: lightblue;}

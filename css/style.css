@@ -103,9 +103,9 @@ padding: 50px;
 .balloon p {font-size: 20px;}
 .mascotte{
 width: 15vh;
-position: absolute;
-left: -10vw;
-top: 5vh;
+position: relative;
+left: 50px;
+top: 100px;
 }
 footer {
 position: relative;
@@ -138,12 +138,13 @@ font-size: 15px;
   width: 500px;
   height: 50px;
 }
-.titel {
-  font-size: 50px;
-}
+.titel {font-size: 50px;}
   @media only screen and (max-width: 668px) {
-      .nav-menu {
-          position: fixed;
+   html{
+      overflow-x: hidden;
+    }
+    .nav-menu {
+          position: absolute;
           left: -100%;
           top: 9rem;
           flex-direction: column;
@@ -153,6 +154,7 @@ font-size: 15px;
           padding-bottom: 20px;
           text-align: center;
           transition: 0.3s;
+          z-index: 600;
       }
       .nav-menu.active {left: 0;}
       .nav-item {margin: 2.5rem 0;}
@@ -179,37 +181,35 @@ font-size: 15px;
         position: relative;
         display: grid;
         width: 100%;
-        height: 50px;
+        height: 550px;
         place-items: center;
         background: url('../images/homepage/banner.png');
         background-repeat: no-repeat;
         z-index: 5;
+        top: 0px;
+    }
+    .welkom {
+      position: relative;
+      top: -100px;
     }
     .mascotte{
       position: relative;
-      left: -30vw;
-      top: -370px;
+      top: -520px;
+      z-index: 3;
+      left: 50px;
     }
       .balloon {
-        height: 59vh;
-        left: 20vh;
-        top: 600px;
-        margin-bottom: 1000px;
-        }
-        .balloon p {
-          left: -5px;
-          top: -100px;
-        }
-        .balloon h1 {
-          position: relative;
-          margin-left: -9px;
-          left: 20px;
-          top: -30px;
-          font-size: 2rem;
+        position: relative;
+        height: 400px;
+        width: fit-content;
+        left: 0;
+        bottom: 150px;
+        top: -2px;
+        z-index: 500;
         }
         footer {
           top: 100px;
-          width: 94%;
+          width: 100%;
           }
           footer a{
             display: none;
