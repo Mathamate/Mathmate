@@ -1,5 +1,6 @@
 @media screen {
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+  /* Algemeen */
   * {
       margin: 0;
       padding: 0;
@@ -9,11 +10,15 @@
       font-size: 62.5%;
       font-family: sans-serif;
       background-color: #D2FEFF;
+      height: 100%;
+      overflow-x: hidden;
   }
   body {
     margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
+  /* Navigatie */
   li {list-style: none;}
   a {text-decoration: none;}
   .header{border-bottom: 1px solid black;}
@@ -51,18 +56,18 @@
       width: 70px;
       z-index: 5;
   }
-html {
-  background-color: #D2FEFF;
-  overflow-x: hidden;
-  height: 100%;
-  }
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
 /* Reeksen */
-
+.fibonacci {
+  position: relative;
+  left: 350px;
+  top: -114.5px;
+}
+.footer-reeksen {
+  position: relative;
+  right: 0;
+  bottom: -600px;
+  left: 0;
+}
 /* Makkelijke berekeningen */
 .mascotte-mak img {
   position: relative;
@@ -70,7 +75,76 @@ body {
   left: 500px;
   top: 150px;
 }
-  /* Makkelijke berekeningen */
+.getal{
+  width: 500px;
+  font-size: 15px;
+}
+.plus {
+  position: absolute;
+  top: 40vh;
+  width: 20vh;
+  left: 510px;
+}
+.macht {
+  position: absolute;
+  top: 280px;
+  left: 710px;
+  font-size: 15px;
+}
+/* Moeilijke berekeningen */
+.factoren {
+  position: relative;
+  left: 350px;
+  top: -102px;
+}
+#calculatefactor {margin-bottom: 200px;}
+/* Alle pagina's */
+.content {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.content h1 {font-size: 45px;}
+.content p {font-size: 15px;}
+.flex{
+  position: absolute;
+  top: 40vh;
+  left: 410px;
+  flex-direction: column;
+  min-width: 300px;
+}
+.priem, .fibonacci, .factor, .factoren, .macht {align-self: center;}
+.factor, .priem {
+  position: relative;
+  left: 50px;
+}
+#result-macht, #result, #calculatefactor, #showfactor, #priemtot, #fibgetallen{
+  position: relative;
+  border: 1px black solid;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  padding-left: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+#uitleg {
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  height: fit-content;
+  width: fit-content;
+  font-size: 15px;
+  left: 600px;
+  top: 200px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.button {
+  width: 20px;
+  height: 20px;
+}
+button, .button2 {padding: 2px;}
 footer {
   position: relative;
   background-color: black;
@@ -94,96 +168,20 @@ footer {
   font-size: 15px;
   text-align: center;
 }
-.content {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-.content h1 {font-size: 45px;}
-.content p {font-size: 15px;}
-
-.getal{
-  width: 500px;
-  font-size: 15px;
-}
-.flex{
-  position: absolute;
-  top: 40vh;
-  left: 35%;
-  flex-direction: column;
-  min-width: 300px;
-  justify-content: center;
-  align-self: center;
-  align-content: center;
-}
-.priem, .fibonacci, .factor, .factoren, .macht {align-self: center;}
-.flex {left: 410px;}
-.plus {
-  position: absolute;
-  top: 40vh;
-  width: 20vh;
-  left: 510px;
-}
-.macht {
-  position: absolute;
-  top: 280px;
-  left: 710px;
-  font-size: 15px;
-}
-.factor, .priem {
-  position: relative;
-  left: 50px;
-}
-.factoren {
-  position: relative;
-  left: 350px;
-  top: -102px;
-}
-.fibonacci {
-  position: relative;
-  left: 350px;
-  top: -107px;
-}
-#result-macht, #result, #calculatefactor, #showfactor, #priemtot, #fibgetallen{
-  position: relative;
-  border: 1px black solid;
-  background-color: white;
-  width: fit-content;
-  height: fit-content;
-  padding-left: 5px;
-  font-size: 15px;
-  border-radius: 5px;
-}
-#calculatefactor {margin-bottom: 200px;}
 .footer a, footer a{
   text-decoration: none;
   color: white;
   padding: 20px;
 }
-#uitleg {
-  position: relative;
-  background-color: white;
-  border: 1px solid black;
-  height: fit-content;
-  width: fit-content;
-  font-size: 15px;
-  left: 600px;
-  top: 200px;
-  padding: 5px;
-  border-radius: 5px;
-}
-.button {
-  width: 20px;
-  height: 20px;
-}
-button, .button2 {padding: 2px;}
 .footer a:hover, footer a:hover {color: lightblue;}
 
 @media only screen and (max-width: 668px) {
+  /* Algemeen */
   html {
     overflow-x: hidden;
   }
-  .nav-menu {
+  /* Navigatie */
+.nav-menu {
     position: absolute;
     left: -1000px;
     top: 9rem;
@@ -217,32 +215,58 @@ button, .button2 {padding: 2px;}
     transform: translateY(-8px) rotate(-45deg);
     background-color: black;
 }
-
-  footer {
-    position: relative;
-    background-color: black;
-    height: fit-content;
-    text-align: center;
-    color: white;
-    padding: 50px;
-    bottom: -700px;
-  }
-  .footer {
-    position: absolute;
-    right: 0;
-    top: 2000px;
-    left: 0;
-    padding: 1rem;
-    background-color: black;
-    color: white;
-    height: fit-content;
-    padding: 50px;
-    text-align: center;
-  }
-  footer a, .footer a {
-    display: none;
-  }
-  .getal{width: 500px;}
+/* Reeksen */
+.fibonacci {
+  position: relative;
+  left: 100px;
+  top: -150px;
+}
+.mascotte-reeksen {
+  position: relative;
+  top: -50px;
+}
+.footer-reeksen {
+  position: absolute;
+  bottom: -450px;
+}
+/* Makkelijke berekeningen */
+.getal{width: 500px;}
+.plus {
+  position: absolute;
+  top: 50vh;
+  width: 20vh;
+  left: 100px;
+}
+.macht{
+  position: absolute;
+  top: 80vh;
+  width: 20vh;
+  left: 100px;
+}
+.mascotte-mak {
+  position: relative;
+  right: 485px;
+  top: 210px;
+}
+/* Moeilijke berekeningen */
+.factoren {
+  position: relative;
+  left: 100px;
+  top: -102px;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  top: 900px;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  height: fit-content;
+  padding: 50px;
+  text-align: center;
+}
+/* Alle pagina's */
   .flex{
     position: relative;
     top: 40vh;
@@ -251,23 +275,6 @@ button, .button2 {padding: 2px;}
     min-width: 300px;
   }
   .priem, .fibonacci, .factor, .factoren, .macht {align-self: center;}
-  .plus {
-    position: absolute;
-    top: 50vh;
-    width: 20vh;
-    left: 100px;
-  }
-  .macht{
-    position: absolute;
-    top: 80vh;
-    width: 20vh;
-    left: 100px;
-  }
-  .mascotte-mak {
-    position: relative;
-    right: 485px;
-    top: 210px;
-  }
   #uitleg {
     position: absolute;
     left: 100px;
@@ -282,27 +289,21 @@ button, .button2 {padding: 2px;}
     padding-left: 5px;
   }
   #calculatefactor {margin-bottom: 200px;}
-  .footer a, footer a{
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-  }
   .factor, .priem {
     position: relative;
     left: 100px;
     top: -200px;
   }
-  .factoren {
+  footer {
     position: relative;
-    left: 100px;
-    top: -102px;
+    background-color: black;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    bottom: -700px;
   }
-  .fibonacci {
-    position: relative;
-    left: 350px;
-    top: -107px;
-  }
-  
+  footer a, .footer a {display: none;}
   .footer a:hover, footer a:hover {color: lightblue;}
 }
 }
